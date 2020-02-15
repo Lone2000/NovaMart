@@ -99,7 +99,7 @@ img {
     background-color: #494949;
     #product-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 3rem;
       padding: 2rem 0 2rem 0;
     }
