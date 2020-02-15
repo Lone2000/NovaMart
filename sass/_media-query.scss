@@ -29,15 +29,19 @@
   .container {
     max-width: 900px;
   }
+
   #main-nav {
     flex-direction: column;
     // justify-content: space-between;
-    padding: 0 10% 0 10%;
+    // padding: 0 10% 0 10%;
+    .list {
+      justify-content: space-around;
+    }
     #logo {
       display: none;
     }
     a {
-      font-size: 0.85rem;
+      font-size: 0.75rem;
     }
   }
   .l-heading {
@@ -105,7 +109,7 @@
         background-position: center;
       }
       .inner-ext {
-        width: 444px;
+        width: 100%;
       }
     }
   }
