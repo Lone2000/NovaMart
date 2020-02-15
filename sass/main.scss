@@ -1,0 +1,128 @@
+@import "config";
+@import "utility";
+// General Style
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+// logo
+#logo {
+  width: 80px;
+  height: 80px;
+}
+// main-nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 1rem;
+  }
+  a {
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    transition: border 0.2s;
+    &:hover {
+      border-bottom: 2px $main-color solid;
+    }
+  }
+}
+// Header
+#header {
+  &-home {
+    background: $bg-img no-repeat center center / cover;
+    height: 100vh;
+    color: $light-color;
+    .container {
+      height: 100%;
+    }
+  }
+}
+// Header Content
+.header-content {
+  height: 500px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 10%;
+  // justify-content: center;
+  // justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#section {
+  // Section A:
+  &-a {
+    height: 100vh;
+    background-image: url("../img/wwd.jpg");
+    background-size: cover;
+
+    // Grid system
+    .container {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      height: 100%;
+      grid-gap: 2rem;
+    }
+  }
+
+  &-b {
+    height: 100%;
+    background-color: #494949;
+    #product-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      padding: 2rem 0 2rem 0;
+    }
+  }
+
+  &-c {
+    height: 90vh;
+    background-image: url("../img/contact-bg.jpg");
+    background-size: cover;
+  }
+}
+// Footer
+
+#main-footer {
+  background-color: $dark-color;
+  height: 90px;
+  p {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+// Media Query
+@import "media-query";
